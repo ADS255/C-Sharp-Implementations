@@ -3,13 +3,10 @@
 using CSI_Utilities;
 using System;
 using Sorting_algorithms;
+using Search_algorithms;
 
 int[] testData= new int[10];
 Array.Copy(Test_Data.UnSortedArray,testData,10);
 
-int[] i = BubbleSort.SortDecending(testData);
+Console.WriteLine (LinearSearch.Search(testData, 5));
 
-foreach(int item in i)
-{
-    Console.WriteLine(item);
-}

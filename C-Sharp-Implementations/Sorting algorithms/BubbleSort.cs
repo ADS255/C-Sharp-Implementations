@@ -5,27 +5,38 @@ namespace Sorting_algorithms
 {
     public class BubbleSort
     {
-        // Add time complexity of algorithm.
-        public static int[] SortDecending(int[] arrayToSort)
+        // Worst case time complexity of O(N^2)
+
+        public static int[] SortAcending(int[] targetArray)
         {
-            for(int i = 0; i < arrayToSort.Length; i++)
+            for (int i = 0; i < targetArray.Length; i++)
             {
-                for (int j = 0; j < arrayToSort.Length-1; j++)
+                for (int j = 0; j < targetArray.Length - 1; j++)
                 {
-                    if(arrayToSort[i] > arrayToSort[j])
+                    if (targetArray[i] < targetArray[j])
                     {
-                        UtilityMethods.SwapArrayElementValues(arrayToSort, i, j);
+                        UtilityMethods.SwapArrayElementValues(targetArray, i, j);
                     }
                 }
             }
 
-            return arrayToSort;
+            return targetArray;
         }
 
-        public static int[] SortAcending(int[] arrayToSort)
+        public static int[] SortDecending(int[] targetArray)
         {
-            // Implement
-            return null;
+            for(int i = 0; i < targetArray.Length; i++)
+            {
+                for (int j = 0; j < targetArray.Length-1; j++)
+                {
+                    if(targetArray[i] > targetArray[j])
+                    {
+                        UtilityMethods.SwapArrayElementValues(targetArray, i, j);
+                    }
+                }
+            }
+
+            return targetArray;
         }
     }
 }
