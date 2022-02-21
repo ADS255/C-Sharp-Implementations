@@ -5,8 +5,5 @@ using System;
 using Sorting_algorithms;
 using Search_algorithms;
 
-int[] testData= new int[10];
-Array.Copy(Test_Data.UnSortedArray,testData,10);
-
-Console.WriteLine (LinearSearch.Search(testData, 5));
+BubbleSort.SortAcending(Test_Data.GenerateUnSortedArray(10, 10));
 

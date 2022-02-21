@@ -20,6 +20,13 @@ namespace Sorting_algorithms
                 }
             }
 
+            Console.WriteLine(" ");
+
+            foreach (int element in targetArray)
+            {
+                Console.Write(" " + element);
+            }
+
             return targetArray;
         }
 
@@ -34,6 +41,13 @@ namespace Sorting_algorithms
                         UtilityMethods.SwapArrayElementValues(targetArray, i, j);
                     }
                 }
+            }
+
+            Console.WriteLine(" ");
+
+            foreach (int element in targetArray)
+            {
+                Console.Write(" " + element);
             }
 
             return targetArray;
