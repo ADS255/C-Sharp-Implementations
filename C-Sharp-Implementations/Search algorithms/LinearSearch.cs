@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Search_algorithms
 {
+    // Time complexity O(N), scales relative to number of inputs
     public class LinearSearch
     {
         public static int Search(int[] targetArray,int valueToSearch)
