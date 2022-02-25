@@ -1,56 +1,25 @@
 ﻿using System;
-using CSI_Utilities;
+using ImpUtils.UtilityMethods;
 
-namespace Sorting_algorithms
+namespace SortingAlgorithms
 {
     public class BubbleSort
     {
-        // Worst case time complexity of O(N^2)
-
-        public static int[] SortAcending(int[] targetArray)
+        public static int[] Sort(int[] arrayToSort)
         {
-            for (int i = 0; i < targetArray.Length; i++)
+            for (int j = 0; j<arrayToSort.Length; j++)
             {
-                for (int j = 0; j < targetArray.Length - 1; j++)
+                for (int i = 0; i < arrayToSort.Length - 1; i++)
                 {
-                    if (targetArray[i] < targetArray[j])
+                    if (arrayToSort[i] > arrayToSort[i+1])
                     {
-                        UtilityMethods.SwapArrayElementValues(targetArray, i, j);
+                        Utilities.SwapElementValues(arrayToSort, i, i+1);
                     }
                 }
             }
 
-            Console.WriteLine(" ");
-
-            foreach (int element in targetArray)
-            {
-                Console.Write(" " + element);
-            }
-
-            return targetArray;
-        }
-
-        public static int[] SortDecending(int[] targetArray)
-        {
-            for(int i = 0; i < targetArray.Length; i++)
-            {
-                for (int j = 0; j < targetArray.Length-1; j++)
-                {
-                    if(targetArray[i] > targetArray[j])
-                    {
-                        UtilityMethods.SwapArrayElementValues(targetArray, i, j);
-                    }
-                }
-            }
-
-            Console.WriteLine(" ");
-
-            foreach (int element in targetArray)
-            {
-                Console.Write(" " + element);
-            }
-
-            return targetArray;
+            Utilities.PrintArray(arrayToSort);
+            return arrayToSort;
         }
     }
 }

@@ -1,9 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
-// Note (.Net 6 implicit using tags are disabled)
-using CSI_Utilities;
 using System;
-using Sorting_algorithms;
-using Search_algorithms;
+using SortingAlgorithms;
+using ImpUtils.TestData;
+using ImpUtils.UtilityMethods;
 
-BubbleSort.SortAcending(Test_Data.GenerateUnSortedArray(10, 10));
+int[] i = { 2, 1, 5, 3, 4 };
+
+BubbleSort.Sort(TestArrays.DefinedUnSortedArray);
+
+
 
