@@ -8,8 +8,8 @@ namespace ImpUtils.TestData
 {
     public class TestArrays
     {
-        public static int[] DefinedUnSortedArray = { 6, 8, 3, 5, 9, 2, 7, 10, 1, 4 };
-        public static int[] DefinedSortedArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        public static int[] DefinedUnSorted = { 6, 8, 3, 5, 9, 2, 7, 10, 1, 4 };
+        public static int[] DefinedSorted = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
         /// <summary>
         /// Returns array of unsorted integers
@@ -17,7 +17,7 @@ namespace ImpUtils.TestData
         /// <param name="elementsInArray">Size of the array</param>
         /// <param name="maxValue">Maximum value elements in array can't exceed</param>
         /// <returns></returns>
-        public static int[] GenerateUnSortedArray(int elementsInArray, int maxValue)
+        public static int[] GenerateUnSorted(int elementsInArray, int maxValue)
         {
             int[] array = new int[elementsInArray];
 

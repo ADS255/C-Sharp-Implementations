@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SearchAlgorithms
+namespace C_Sharp_Implementations.Search_algorithms
 {
     // Time complexity O(N), scales relative to number of inputs
     public class LinearSearch

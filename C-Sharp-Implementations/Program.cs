@@ -1,12 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
 using SortingAlgorithms;
+using C_Sharp_Implementations.Search_algorithms;
 using ImpUtils.TestData;
 using ImpUtils.UtilityMethods;
 
-int[] i = { 2, 1, 5, 3, 4 };
-
-BubbleSort.Sort(TestArrays.DefinedUnSortedArray);
-
-
-
+BinarySearch.Search(TestArrays.DefinedSorted,5);
