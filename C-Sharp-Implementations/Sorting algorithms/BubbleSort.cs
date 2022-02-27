@@ -1,8 +1,12 @@
 ﻿using System;
 using ImpUtils.UtilityMethods;
 
-namespace SortingAlgorithms
+namespace C_Sharp_Implementations.Sorting_algorithms
 {
+    // Time complexity O(N^2)
+
+    // Compares adjacent elements and swaps their position if one is greater than the other.
+
     public class BubbleSort
     {
         public static int[] Sort(int[] arrayToSort)
